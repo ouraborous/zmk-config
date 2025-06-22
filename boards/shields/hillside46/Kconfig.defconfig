@@ -6,12 +6,12 @@ if SHIELD_HILLSIDE46_LEFT
 config ZMK_KEYBOARD_NAME
     default "Hillside46"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
+config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_HILLSIDE46_LEFT || SHIELD_HILLSIDE46_RIGHT
+if SHIELD_HILLSIDE46_LEFT || SHIELD_HILLSIDE46_RIGHT || SHIELD_HILLSIDE46_DONGLE
 
 config ZMK_SPLIT
     default y
@@ -25,9 +25,6 @@ config ZMK_KEYBOARD_NAME
     default "Hillside46 Dngl"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-config ZMK_SPLIT
     default y
 
 # Set this to the number of peripherals your dongle will have.
