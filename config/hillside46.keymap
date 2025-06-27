@@ -12,15 +12,16 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/hillside46.h"
 
+#define QTMS 200
 &mt {
   flavor = "balanced";
-  quick-tap-ms = <175>;
+  quick-tap-ms = <QTMS>;
 };
 
 &lt {
   flavor = "balanced";
   tapping-term-ms = <200>;
-  quick-tap-ms = <175>;
+  quick-tap-ms = <QTMS>;
 };
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5 LH4
@@ -29,7 +30,7 @@
 
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS)                                 \
   ZMK_HOLD_TAP(NAME, bindings = <HOLD>, <TAP>; flavor = "balanced";            \
-               tapping-term-ms = <280>; quick-tap-ms = <175>;                  \
+               tapping-term-ms = <280>; quick-tap-ms = <QTMS>;                  \
                require-prior-idle-ms = <100>; hold-trigger-on-release;         \
                hold-trigger-key-positions = <TRIGGER_POS>;)
 
