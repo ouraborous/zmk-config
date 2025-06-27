@@ -15,7 +15,7 @@
 include:
 
   - board: nice_nano_v2
-    shield: hillside46_dongle
+    shield: hillside46_dongle dongle_display
   - board: nice_nano_v2
     shield: hillside46_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
