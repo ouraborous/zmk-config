@@ -67,7 +67,7 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(3,5)                   RC(3,6
 
     oled: sh1106@3c {
         compatible = "sinowealth,sh1106";
-        reg = <0x3c>;
+        reg = <0x78>;
         width = <129>;
         height = <64>;
         segment-offset = <1>;
